@@ -1,4 +1,4 @@
-import { Input, Card, CardBody, CardFooter, Typography } from "@material-tailwind/react";
+import { Input, Card, CardBody } from "@material-tailwind/react";
 
 export function Home() {
 
