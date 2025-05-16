@@ -1,11 +1,19 @@
-import { Button } from '@material-tailwind/react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import { Home } from './pages/Home'
+import { UploadPage } from './pages/UploadPage'
 
 function App() {
 
   return (
-    <div>
-      <Button>Hello</Button>
-    </div>
+    <Router>
+      <div className="">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/upload" element={<UploadPage />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
